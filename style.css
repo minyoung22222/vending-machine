@@ -1,62 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
-body, main, p, ul{
-    margin: 0 auto;
-}
-
-li {
-    list-style: none;
-}
-
-button, input, div {
-    border: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: #fff;
-}
-
-
 * {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: lavender;
 }
+
+body {
+    
+    background-color: #EAE8FE;
+}
+
 
 .header {
     height: auto;
-    /* background-color: red; */
     padding-bottom: 67px;
     text-align: center;
+    background-color: #EAE8FE;
 }
 .header img {
     width: 386px;
 }
 
 .main {
-    width: 900px;
+    /* width: 750px; */
+    display: flex;
+    justify-content: center;
     text-align: center;
-    
+    background-color: #EAE8FE;
 }
-.section1 {
-    float: left;
+.section_left {
     width: 360px;
-    padding: 31px 27px 28px;
+    padding: 31px 27px 24px;
+    margin-right: 28px ;
     background-color: white;
-}
-.cola {
-    width: 94px;
-    /* height: 130px; */
-    padding: 11px 12px 9px;
-    border: 3px solid rgb(223, 223, 223);
-    border-radius: 10px;
-    display: inline-block;
     box-sizing: border-box;
 }
-.cola:nth-child(1), .cola:nth-child(2) {
-    margin-bottom: 12px;
+.section_right {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background-color: #EAE8FE;
+    box-sizing: border-box;
 }
-.cola:nth-child(1), .cola:nth-child(2),
-.cola:nth-child(4), .cola:nth-child(5) {
-    margin-right: 12px;
+.section_left .cola_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    background-color: #fff;
 }
+.cola_btn{
+    padding: 11px 0 9px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
 .cola:hover {
     border: 3px solid #6327FE;
 }
@@ -68,146 +65,161 @@ button, input, div {
     display: inline-block;
     
 } */
-.cola img {
+.cola_btn .cola_img {
     width: 36px;
-    height: 65px;
-    /* margin: 11px 29px 6px; */
+    margin: 0 auto;
 }
-.cola .cola_text {
+.cola_btn .cola_text {
     font-size: 9px;
-    
+    line-height: 13.03px;
+    margin: 6px 0 7px;
 }
-.cola .cola_btn {
-    width: 70px;
-    padding: 3px;
-    margin-top: 7px;
+.cola_btn .cola_price {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0 12px;
     border-radius: 50px;    
     background-color: #6327FE;
-}
-.cola .cola_btn {
     color: white;
     font-size: 12px;
 }
-.balance {
-    width: 200px;
-    padding: 6px 10px 7px;
-    float: left;
+
+.buy {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
     margin-top: 20px;
+    
+}
+
+.buy .balance {
+    float: left;
+    width: 200px;
+    /* grid-column: 1/3; */
+    padding: 6px 10px 7px;
     border-radius: 5px;
     background-color: lavender;
     box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20.27px;
 }
 .balance .balance_text_1 {
-    display: inline;
     float: left;
 }
 .balance .balance_text_2 {
-    display: inline;
     float: right;
 }
 .return_btn {
+    float: right;
     width: 94px;
-    padding: 6px 8px 10px 9px;
-    margin-top: 20px;
-    border: 0;
+    padding: 6px 9px 8px ;
     border-radius: 5px;
     font-size: 13px;
-    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+    line-height: 18.82px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.deposit {
+    margin-top: 11px;
 }
 .deposit_inp {
     width: 200px;
-    margin: 11px 0;
     padding: 6px 0 8px 6px;
     float: left;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     box-sizing: border-box;
 }
-.deposit_btn {
-    margin-top: 11px;
-}
-.cola_list {
+
+.select_cola_list {
     width: 200px;
     height: 106px;
     float: left;
-    padding: 12px 18px 0 12px;
+    /* padding: 12px 18px 0 12px; */
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     text-align: center;
     box-sizing: border-box;
-    background-color: lavender;
+    background-color: #EAE8FE;
+    overflow-y: scroll;
 }
-.cola_list li {
+.select_cola_list li {
     width: 170px;
-    height: 46px;
-    padding: 8px;
-    margin-bottom: 6px;
+    margin: 12px 12px 6px;
     font-size: 9px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fff;
+    overflow: hidden;
 }
-.cola_list li img {
+.select_cola_list li img {
     width: 18px;
     float: left;
-    margin-right: 10px;
+    margin: 6px 0 7px 10px;
 }
-.cola_list li span {
+.select_cola_list li span {
     float: left;
-    margin-top: 9px;
-    background-color: #fff;
+    line-height: 13.03px;
+    margin: 18px 0 18px 10px;
 }
-.cola_list li div {
-    display: inline;
+.select_cola_list .count {
+    float: right;
     width: 30px;
     height: 30px;
-    float: right;
-    padding-top: 4px;
-    font-size: 14px;
+    margin: 8px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
-
 }
+
 .get_btn {
+    float: right;
     width: 94px;
-    height: 106px;
     margin-top: 12px;
+    padding: 43px 35px 44px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background-color: #6327FE;
 }
-.section2 {
-    float: right;
-    width: 360px;
-    margin-bottom: 4px;
-    /* height: inherit; */
-    /* padding: 20px; */
+
+.mymoney {
+    padding: 9px 27px;
+    margin-bottom: 20px;
     background-color: #fff;
 }
-.section2-1 {
+.mymoney_in {
     width: 306px;
-    margin: 9px 27px;
     padding: 6px 10px;
-    overflow: hidden;
     border-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 20.27px;
+    background-color: #EAE8FE;
 }
-.section2-1 span:nth-child(1) {
+.mymoney_in span:nth-child(1) {
     float: left;
 }
-.section2-1 span:nth-child(2) {
+.mymoney_in span:nth-child(2) {
     float: right;
 }
-.section3 {
-    float: right;
-    width: 381px;
+.getcola {
+    padding: 0 27px 52px;
     background-color: #fff;
 }
-.section2-2 {
-    
+.getcola_in {
     width: 306px;
-    background-color: purple;
+    height: 364px;
+    background-color: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+}
+.getcola_txt {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 25px 0 13px;
 }
 .footer {
     height: 171px;
