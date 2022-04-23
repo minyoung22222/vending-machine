@@ -48,24 +48,41 @@ body {
     gap: 12px;
     background-color: #fff;
 }
+
 .cola_btn{
+    position: relative;
     padding: 11px 0 9px;
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
-
-.cola:hover {
+.cola_btn:active:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: 3px solid #6327FE;
-}
-/* .soldout {
-    width: 115px;
-    height: 165px;
     border-radius: 10px;
-    background-color: rgb(90, 88, 88);
-    display: inline-block;
+    box-sizing: border-box;
+}
+.soldout {
+    position: relative;
+    pointer-events: none;
+}
+.soldout::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: no-repeat center/ 60px 46px url('mediaquery/Sold-out.svg') rgba(0, 0, 0, 0.5);
     
-} */
+}
+
 .cola_btn .cola_img {
     width: 36px;
     margin: 0 auto;
@@ -150,7 +167,6 @@ body {
 .select_cola_list::-webkit-scrollbar {
     width: 4px;
     height: 79px;
-    
 }
 .select_cola_list::-webkit-scrollbar-thumb {
     background-color: #fff;
@@ -255,6 +271,3 @@ body {
     font-size: 12px;
     line-height: 17.38px;
 }
-/* .footer {
-    height: 171px;
-} */
