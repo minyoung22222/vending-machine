@@ -37,6 +37,7 @@ body {
 .section_right {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 360px;
     background-color: #EAE8FE;
     box-sizing: border-box;
@@ -91,6 +92,10 @@ body {
     
 }
 
+.balance, .return_btn {
+    margin-bottom: 11px;
+}
+
 .buy .balance {
     float: left;
     width: 200px;
@@ -118,8 +123,8 @@ body {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
-.deposit {
-    margin-top: 11px;
+.deposit_inp, .deposit_btn {
+    margin-bottom: 11px;
 }
 .deposit_inp {
     width: 200px;
@@ -134,7 +139,7 @@ body {
     width: 200px;
     height: 106px;
     float: left;
-    /* padding: 12px 18px 0 12px; */
+    padding: 12px 14px 12px 12px;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     text-align: center;
@@ -142,15 +147,28 @@ body {
     background-color: #EAE8FE;
     overflow-y: scroll;
 }
+.select_cola_list::-webkit-scrollbar {
+    width: 4px;
+    height: 79px;
+    
+}
+.select_cola_list::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 50px;
+}
+
 .select_cola_list li {
-    width: 170px;
-    margin: 12px 12px 6px;
+    /* width: 170px; */
     font-size: 9px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
+}
+
+.select_cola_list li + li {
+    margin-top: 6px;
 }
 .select_cola_list li img {
     width: 18px;
@@ -175,10 +193,13 @@ body {
 .get_btn {
     float: right;
     width: 94px;
-    margin-top: 12px;
     padding: 43px 35px 44px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    font-size: 13px;
+    line-height: 18.82px;
+    color: #fff;
+    font-weight: 700;
     background-color: #6327FE;
 }
 
@@ -204,23 +225,36 @@ body {
     float: right;
 }
 .getcola {
-    padding: 0 27px 52px;
+    padding: 25px 27px 26px;
     background-color: #fff;
 }
 .getcola_in {
+    position: relative;
     width: 306px;
     height: 364px;
     background-color: #EAE8FE;
-    border: 1px solid #BDBDBD;
-    box-sizing: border-box;
     border-radius: 5px;
-    
 }
 .getcola_txt {
     font-size: 14px;
     font-weight: 700;
-    margin: 25px 0 13px;
+    margin-bottom: 13px;
 }
-.footer {
+
+.getcola_list {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.total {
+    float: right;
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 17.38px;
+}
+/* .footer {
     height: 171px;
-}
+} */
