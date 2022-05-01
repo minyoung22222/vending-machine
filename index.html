@@ -9,146 +9,160 @@
     <title>vending machine</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <img src="mediaquery/logo.svg" alt="logo">
-        </header>
-        <main class="main">
-            <section class="section_left">
-                <section class="cola_section">
-                    <button class="cola_btn">
+    <header class="header">
+        <h1 class="hidden">벤딩머신 header</h1>
+        <img src="mediaquery/logo.svg" alt="cola cola 벤딩머신">
+    </header>
+    <main class="main">
+        <h2 class="hidden">벤딩머신 main</h2>
+        <section class="section_left">
+            <h3 class="hidden">벤딩머신 왼쪽 section</h3>
+            <ul class="cola_list">
+                <li>
+                    <button class="cola_btn" type="button">
                         <img src="mediaquery/Original_Cola.svg" alt="" class="cola_img">
-                        <p class="cola_text">
-                            Original_Cola</p>
+                        <strong class="cola_name">
+                            Original_Cola</strong>
                         <span class="cola_price">1000원</span>
                     </button>
-                    <button class="cola_btn soldout">
+                </li>
+                <li>
+                    <button class="cola_btn soldout" type="button">
                         <img src="mediaquery/Violet_Cola.svg" alt="" class="cola_img">
-                        <p class="cola_text">
-                            Violet_Cola</p>
+                        <strong class="cola_name">
+                            Violet_Cola</strong>
                         <span class="cola_price">1000원</span>
                     </button>
-                    <button class="cola_btn">
+                </li>
+                <li>
+                    <button class="cola_btn" type="button">
                         <img src="mediaquery/Yellow_Cola.svg" alt="" class="cola_img">
-                        <p class="cola_text">
-                            Yellow_Cola</p>
+                        <strong class="cola_name">
+                            Yellow_Cola</strong>
                         <span class="cola_price">1000원</span>
                     </button>
-                    <button class="cola_btn soldout">
+                </li>
+                <li>
+                    <button class="cola_btn"  type="button">
                         <img src="mediaquery/Cool_Cola.svg" alt="" class="cola_img">
-                        <p class="cola_text">
-                            Cool_Cola</p>
+                        <strong class="cola_name">
+                            Cool_Cola</strong>
                         <span class="cola_price">1000원</span>
                     </button>
-                    <button class="cola_btn soldout">
+                </li>
+                <li>
+                    <button class="cola_btn soldout"  type="button">
                         <img src="mediaquery/Green_Cola.svg" alt="" class="cola_img">
-                        <p class="cola_text">
-                            Green_Cola</p>
+                        <strong class="cola_name">
+                            Green_Cola</strong>
                         <span class="cola_price">1000원</span>
                     </button>
-                    <button class="cola_btn">
+                </li>
+                <li>
+                    <button class="cola_btn"  type="button">
                         <img src="mediaquery/Orange_Cola.svg" alt="" class="cola_img">
-                        <p class="cola_text">
-                            Orange_Cola</p>
+                        <strong class="cola_name">
+                            Orange_Cola</strong>
                         <span class="cola_price">1000원</span>
                     </button>
-                </section>
-                <section class="buy">
-                    <section class="balance">
-                        <span class="balance_text_1">잔액:</span>
-                        <span class="balance_text_2">1,000원</span>
-                        
-                    </section>
-                    <button class="return_btn">
-                        거스름돈 반환
-                    </button>
-                    <section class="deposit">
-                        <input class="deposit_inp" type="text" placeholder="입금액 입력">
-                        <button class="return_btn deposit_btn">
-                            입금
-                        </button>
-                    </section>
-                    <ul class="select_cola_list">
-                        <li>
-                            <img src="mediaquery/Original_Cola.svg" alt="Original_Cola">
-                            <span>Original_Cola</span>
-                            <button class="count">1</button>
-                        </li>
-                        <li>
-                            <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                            <span>Green_Cola</span>
-                            <button class="count">2</button>
-                        </li>
-                        <li>
-                            <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                            <span>Green_Cola</span>
-                            <button class="count">2</button>
-                        </li>
-                    </ul>
-                    <button class="get_btn">
-                        획득
+                </li>
+            </ul>
+            <section class="buy">
+                <h4 class="hidden">음료 구매할 수 있는 section</h4>
+                <strong class="balance">잔액:
+                <span class="balance_money">1,000원</span></strong>
+                <button class="return_btn" type="button">
+                    거스름돈 반환
+                </button>
+                <section class="deposit">
+                    <h5 class="hidden">음료 입금액 입력, 입금 버튼</h5>
+                    <label class="hidden" for="deposit_input">입금액 입력받기</label>
+                    <input class="deposit_inp" type="text" placeholder="입금액 입력" id="deposit_input">
+                    <button class="return_btn deposit_btn" type="button">
+                        입금
                     </button>
                 </section>
+                <ul class="select_cola_list">
+                    <li>
+                        <img src="mediaquery/Original_Cola.svg" alt="">
+                        <span>Original_Cola</span>
+                        <button class="count">1</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                </ul>
+                <button class="get_btn" type="button">
+                    획득
+                </button>
             </section>
-            <section class="section_right">
-                <section class="mymoney">
-                    <section class="mymoney_in">
-                        <span>소지금 : </span>
-                        <span>25,000 원</span>
-                    </section>
-                </section>
-                <section class="getcola">
-                    <p class="getcola_txt">
-                        획득한 음료
-                    </p>
-                    <section class="getcola_in">
-                        <ul class="select_cola_list getcola_list">
-                            <li>
-                                <img src="mediaquery/Original_Cola.svg" alt="Original_Cola">
-                                <span>Original_Cola</span>
-                                <button class="count">1</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                            <li>
-                                <img src="mediaquery/Green_Cola.svg" alt="Green_Cola">
-                                <span>Green_Cola</span>
-                                <button class="count">2</button>
-                            </li>
-                        </ul>
-                    </section>
-                    <p class="total">총 금액 : 9,000원</p>
-                </section>
+        </section>
+        <section class="section_right">
+            <h3 class="hidden">벤딩머신 오른쪽 section</h3>
+            <section class="mymoney">
+                <h4 class="hidden">소지하고 있는 돈을 알려준다.</h4>
+                <div class="mymoney_in">
+                    <strong>소지금 : </strong>
+                    <span>25,000 원</span>
+                </div>
             </section>
-        </main>
-    </div>
+            <section class="getcola">
+                <h4 class="hidden">획득한 음료의 목록을 알려준다.</h4>
+                <h4 class="getcola_txt">
+                    획득한 음료
+                </h4>
+                <ul class="select_cola_list getcola_list">
+                    <li>
+                        <img src="mediaquery/Original_Cola.svg" alt="">
+                        <span>Original_Cola</span>
+                        <button class="count">1</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                    <li>
+                        <img src="mediaquery/Green_Cola.svg" alt="">
+                        <span>Green_Cola</span>
+                        <button class="count">2</button>
+                    </li>
+                </ul>
+                <strong class="total">총 금액 : 9,000원</strong>
+            </section>
+        </section>
+    </main>
 </body>
 </html>

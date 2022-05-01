@@ -8,6 +8,9 @@ body {
     background-color: #EAE8FE;
 }
 
+.hidden {
+    display: none;
+}
 
 .header {
     padding-bottom: 67px;
@@ -18,12 +21,11 @@ body {
 }
 
 .main {
-    margin: 0 auto;
-    width: 750px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    gap: 28px;
+    margin-bottom: 171px;
 }
 .section_left {
     width: 360px;
@@ -38,7 +40,7 @@ body {
     width: 360px;
     box-sizing: border-box;
 }
-.section_left .cola_section {
+.section_left .cola_list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
@@ -81,9 +83,9 @@ body {
 
 .cola_btn .cola_img {
     width: 36px;
-    margin: 0 auto;
 }
-.cola_btn .cola_text {
+.cola_btn .cola_name {
+    display: block;
     font-size: 9px;
     line-height: 13.03px;
     margin: 6px 0 7px;
@@ -91,7 +93,6 @@ body {
 .cola_btn .cola_price {
     display: inline-block;
     padding: 5px 15px;
-    margin: 0 12px;
     border-radius: 50px;    
     background-color: #6327FE;
     color: white;
@@ -99,10 +100,8 @@ body {
 }
 
 .buy {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr; */
     margin-top: 20px;
-    
+    width: 306px;
 }
 
 .balance, .return_btn {
@@ -112,18 +111,15 @@ body {
 .buy .balance {
     float: left;
     width: 200px;
-    /* grid-column: 1/3; */
     padding: 6px 10px 7px;
     border-radius: 5px;
-    background-color: lavender;
+    background-color: #EAE8FE;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 20.27px;
+    
 }
-.balance .balance_text_1 {
-    float: left;
-}
-.balance .balance_text_2 {
+.balance .balance_money {
     float: right;
 }
 .return_btn {
@@ -146,6 +142,7 @@ body {
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     box-sizing: border-box;
+    /* grid-template-columns: 1/3; */
 }
 
 .select_cola_list {
@@ -155,28 +152,32 @@ body {
     padding: 12px 14px 12px 12px;
     border: 1px solid #BDBDBD;
     border-radius: 5px;
-    text-align: center;
     box-sizing: border-box;
     background-color: #EAE8FE;
     overflow-y: scroll;
 }
 .select_cola_list::-webkit-scrollbar {
-    width: 4px;
+    width: 12px;
     height: 79px;
+    /* background-color: #6327FE; */
 }
 .select_cola_list::-webkit-scrollbar-thumb {
-    background-color: #fff;
+    background-color: white;
     border-radius: 50px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
 }
 
+
+
 .select_cola_list li {
-    /* width: 170px; */
     font-size: 9px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fff;
     overflow: hidden;
+    position: relative;
 }
 
 .select_cola_list li + li {
@@ -184,11 +185,10 @@ body {
 }
 .select_cola_list li img {
     width: 18px;
-    float: left;
     margin: 6px 0 7px 10px;
 }
 .select_cola_list li span {
-    float: left;
+    position: absolute;
     line-height: 13.03px;
     margin: 18px 0 18px 10px;
 }
@@ -221,7 +221,6 @@ body {
     background-color: #fff;
 }
 .mymoney_in {
-    width: 306px;
     padding: 6px 10px;
     border-radius: 5px;
     box-sizing: border-box;
@@ -230,33 +229,28 @@ body {
     line-height: 20.27px;
     background-color: #EAE8FE;
 }
-.mymoney_in span:nth-child(1) {
+
+.mymoney_in strong {
     float: left;
 }
-.mymoney_in span:nth-child(2) {
+.mymoney_in span {
     float: right;
 }
 .getcola {
     padding: 25px 27px 26px;
     background-color: #fff;
 }
-.getcola_in {
-    position: relative;
-    width: 306px;
-    height: 364px;
-    background-color: #EAE8FE;
-    border-radius: 5px;
-}
+
 .getcola_txt {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 13px;
+    text-align: center;
 }
 
 .getcola_list {
-    position: absolute;
-    width: inherit;
-    height: inherit;
+    width: 306px;
+    height: 364px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
@@ -275,8 +269,11 @@ body {
     .header img {
         width: 166px;
     }
-    .main {
-        display: flex;
-        flex-direction: column;
+    .header {
+        padding-bottom: 0px;
     }
+    .main {
+        margin-bottom: 0px;
+    }
+    
 }
