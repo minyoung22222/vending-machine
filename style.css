@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
+
 * {
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -187,7 +188,7 @@ body {
     width: 18px;
     margin: 6px 0 7px 10px;
 }
-.select_cola_list li span {
+.select_cola_list li .cola_name {
     position: absolute;
     line-height: 13.03px;
     margin: 18px 0 18px 10px;
@@ -200,6 +201,10 @@ body {
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
+    text-align: center;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .get_btn {
