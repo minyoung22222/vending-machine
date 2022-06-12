@@ -1,10 +1,10 @@
-const colaBtns = document.querySelectorAll('.cola_btn');
-const selectList = document.querySelector('.select_cola_list');
+const colaBtns = document.querySelectorAll('.cola_btn');    // 콜라 버튼들
+const selectList = document.querySelector('.select_cola_list');     // 선택된 콜라 리스트
 
 
-colaBtns.forEach(colaBtn => {
+colaBtns.forEach(colaBtn => {       // 콜라버튼들 순회
     colaBtn.addEventListener('click', (e) => {
-        const selectedCola = e.target;
+        const selectedCola = e.target;      // 선택된 콜라
         
         const createLi = document.createElement('li');
 
@@ -20,9 +20,9 @@ colaBtns.forEach(colaBtn => {
         const createBtn = document.createElement('span');
         createBtn.classList.add('count')
 
-        createLi.append(createLiImg, createStrong, createBtn)
+        createLi.append(createLiImg, createStrong, createBtn)       // li에 img, strong, button 태그 추가
         
-        selectList.append(createLi)
+        selectList.append(createLi)     // select_cola_list에 만들어진 li태그 추가
         
     });
 });
