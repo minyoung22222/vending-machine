@@ -238,7 +238,7 @@ body {
 .mymoney_in strong {
     float: left;
 }
-.mymoney_in span {
+.mymoney_in .mymoney_money {
     float: right;
 }
 .getcola {
